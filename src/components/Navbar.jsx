@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 const Navbar = () => {
 
     const NavItems = [
-        {name:"Home",id:"name"},
+        {name:"Home",id:"home"},
         {name:"About",id:"about"},
         {name:"Projects",id:"projects"}
     ]
@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex flex-row justify-around align-middle items-center px-4 p-6'>
+    <div className='flex flex-row justify-around align-middle items-center px-4 p-6 bg-black fixed w-full h-fit '>
       <h1 className='text-2xl font-light'>Logo</h1>
 
       {/* <ul className='flex flex-row justify-around align-middle  items-center  gap-4'>
