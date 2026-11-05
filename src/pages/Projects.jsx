@@ -1,6 +1,7 @@
 
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import VioletRoom from "../assets/Red.png";
 
 const projects = [
   {
@@ -36,18 +37,33 @@ const projects = [
     demo: "#",
     number: "03",
   },
+  
 ];
 
 const Projects = () => {
   return (
     <section
       id="projects"
+       style={{ backgroundImage: `url(${VioletRoom})` }}
       className="relative min-h-screen overflow-hidden bg-black px-6 py-20 text-white md:px-12 lg:px-20"
     >
       {/* Background Effects */}
-      <div className="pointer-events-none absolute right-0 top-20 h-96 w-96 rounded-full bg-violet-600/10 blur-[150px]" />
+      {/* <div className="pointer-events-none absolute right-0 top-20 h-96 w-96 rounded-full bg-violet-600/10 blur-[150px]" />
+          Background Video
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover"
+      > 
+        <source src="/videos/Background3.mp4" type="video/mp4" />
+      </video> */}
 
-      <div className="relative z-10">
+      {/* Dark Overlay */}
+      {/* <div className="absolute inset-0 bg-black/50"></div> */}
+
+      <div className="relative z-10 bg-black/30">
 
         {/* Section Heading */}
         <div className="mb-16 flex flex-col justify-between gap-5 md:flex-row md:items-end">
@@ -73,7 +89,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-500 hover:-translate-y-2 hover:border-violet-500/50 hover:bg-white/[0.06]"
+              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-black/[0.3] p-6 transition-all duration-500 hover:-translate-y-2 hover:border-violet-500/50 hover:bg-black"
             >
               {/* Card Number */}
               <div className="mb-8 flex items-center justify-between">

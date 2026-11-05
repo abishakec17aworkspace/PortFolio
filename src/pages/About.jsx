@@ -1,5 +1,5 @@
 import React from "react";
-
+import Profilepic from '../assets/Profilepic.jpeg'
 const About = () => {
   return (
     <section
@@ -27,7 +27,7 @@ const About = () => {
         </p>
 
         <h1 className="text-5xl font-light md:text-7xl">
-          About <span className="font-bold text-purple-400">Me.</span>
+          About <span className="font-bold text-purple-400"></span>
         </h1>
       </div>
 
@@ -37,12 +37,12 @@ const About = () => {
         {/* Profile Image */}
         <div className="flex justify-center">
           <div className="relative h-[350px]  w-[280px] md:h-[450px] md:w-[350px]">
-            <div className="absolute -right-4 -top-4 h-full w-full rounded-2xl border border-purple-400/40" />
+            {/* <div className="absolute -right-4 -top-4 h-full w-full rounded-2xl border border-purple-400/40" /> */}
 
             <img
-              // src="/images/ProfileImage.jpg"
+              src={Profilepic}
               alt="Abishake C - Software Developer"
-              className="relative h-full w-full rounded-2xl object-cover grayscale transition duration-500 hover:grayscale-0"
+              className="relative h-full w-full rounded-2xl object-cover  transition duration-500 hover:grayscale-0"
             />
           </div>
         </div>
