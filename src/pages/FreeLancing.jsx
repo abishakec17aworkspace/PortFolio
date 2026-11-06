@@ -8,9 +8,11 @@ import {
   FaLaptopCode,
   FaDatabase,
   FaRobot,
+  FaGlobe,
 } from "react-icons/fa";
 
 import VioletRoom from "../assets/Portal.png";
+import { FaWebflow } from "react-icons/fa6";
 
 const FreeLancing = () => {
   const services = [
@@ -37,6 +39,12 @@ const FreeLancing = () => {
       title: "AI-Powered Solutions",
       description:
         "Integrating intelligent AI features to automate workflows and enhance digital experiences."
+    },
+    {
+      icon: <FaGlobe />,
+      title: "Professional Portfolio's",
+      description:
+        "Designing and developing visually compelling, portfolios that showcase personal branding, skills, achievements."
     },
   ];
 
@@ -73,7 +81,7 @@ const FreeLancing = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-7">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2 md:gap-7">
 
           {services.map((service, index) => (
             <div

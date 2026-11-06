@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 
 
@@ -27,23 +27,67 @@ const Mainpage = () => {
       <div className="relative z-10 flex flex-row items-center justify-between px-8 py-6  ">
 
         <h1 className="rounded-lg  p-2 text-xl font-light text-white ">
-          hi, this is Abishake C
+          this is Abishake C
         </h1>
 
         {/* Social Icons */}
         <div className="flex flex-row items-center gap-5">
-          <span className="cursor-pointer">
-            <FaWhatsapp size={25} />
+          <span className="cursor-pointer group ">
+            <a
+                  href="https://wa.me/919344977677"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+            <FaWhatsapp size={25} className="group-hover:-translate-y-2 group-hover:scale-110 duration-200" />
+                </a>
           </span>
 
-          <span className="cursor-pointer">
-            <FaGithub size={25} />
+          <span className="cursor-pointer group ">
+            <a
+                  href="https://www.linkedin.com/in/abishake-c17a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+            <FaLinkedin size={25} className="group-hover:-translate-y-2 group-hover:scale-110 duration-200" />
+                </a>
           </span>
 
-          <span className="cursor-pointer">
-            <FaPhone size={25} />
+          <span className="cursor-pointer group">
+             <a
+                  href="https://github.com/abishakec17aworkspace"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <FaGithub size={25} className="group-hover:-translate-y-2 group-hover:scale-110 duration-200" />
+                </a>
           </span>
+
+          
+
+          <div className="relative group">
+          <span className="cursor-pointer inline-flex">
+            <FaPhone
+              size={20}
+              className="transition-transform duration-200 group-hover:scale-105"
+            />
+          </span>
+
+        {/* Phone number tooltip */}
+        <div className="absolute  left-1/2 -translate-x-28 mb-3 scale-95
+                        whitespace-nowrap rounded-lg bg-black text-white
+                        px-4 py-2 text-sm shadow-lg
+                        opacity-0 invisible translate-y-2
+                        group-hover:opacity-100 group-hover:visible
+                        group-hover:translate-y-0
+                        transition-all duration-300">
+          +91 93449 77677
         </div>
+
+      </div>
+
+
+      </div>
+      
       </div>
 
       {/* Main Content */}
@@ -55,8 +99,16 @@ const Mainpage = () => {
           & freelancer
           </span>
         </h1>
-        <BsFillArrowUpRightCircleFill size={40} className="hover:size-[12%] hover:text-black duration-200 delay-75" />
-
+       <a
+  href="#contact"
+  aria-label="Let's work together"
+  className="group inline-flex p-3"
+>
+  <BsFillArrowUpRightCircleFill
+    size={40}
+    className="transform transition-all duration-200 ease-out group-hover:scale-125 group-hover:-translate-y-4 group-hover:text-black"
+  />
+</a>
 
         {/* Description */}
         {/* <p className="max-w-xl rounded-lg bg-black/25 p-3 font-sans text-xs leading-6 text-white">

@@ -22,8 +22,8 @@ const About = () => {
 
       {/* Section Heading */}
       <div className="relative z-10 mb-16">
-        <p className="mb-3 text-sm uppercase tracking-[0.3em] text-purple-400">
-          Get to know me
+        <p className="mb-3 text-sm uppercase tracking-[0.3em] text-red-600">
+          Get to know
         </p>
 
         <h1 className="text-5xl font-light md:text-7xl">
@@ -35,14 +35,14 @@ const About = () => {
       <div className="relative z-10 grid grid-cols-1 items-center gap-12 md:grid-cols-2">
 
         {/* Profile Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <div className="relative h-[350px]  w-[280px] md:h-[450px] md:w-[350px]">
             {/* <div className="absolute -right-4 -top-4 h-full w-full rounded-2xl border border-purple-400/40" /> */}
 
             <img
               src={Profilepic}
               alt="Abishake C - Software Developer"
-              className="relative h-full w-full rounded-2xl object-cover  transition duration-500 hover:grayscale-0"
+              className="relative h-[350px] w-full rounded-2xl object-cover mt-14  transition duration-500 hover:grayscale-0"
             />
           </div>
         </div>
@@ -50,29 +50,31 @@ const About = () => {
         {/* Personal Introduction */}
         <div className="space-y-6 backdrop-blur-lg p-4 rounded-2xl ">
           <h2 className="text-2xl font-medium md:text-3xl">
-            I'm Abishake C
+            Abishake C
           </h2>
 
           <p className="text-lg font-light leading-7 text-white md:text-base">
-            A Computer Science graduate passionate about software development,
-            data analytics, and building creative digital experiences.
-            I enjoy transforming ideas into practical applications
-            using modern technologies and continuously exploring new skills.
-          </p>
+          An Information Technology graduate and aspiring Software Developer
+          passionate about building scalable applications and intuitive digital
+          experiences. Skilled in modern frontend and backend technologies, with
+          a strong interest in problem-solving, data-driven solutions, and
+          continuous learning. I strive to transform innovative ideas into
+          impactful, user-focused applications through clean code and thoughtful design.
+        </p>
 
           {/* Education */}
           <div className="pt-4">
             <h3 className="mb-6 text-2xl font-semibold">
-              <span className="text-purple-400">Education</span>
+              <span className="text-red-600">Education</span>
             </h3>
 
-            <div className="space-y-6 border-l border-purple-400/40 pl-6">
+            <div className="space-y-6 border-l border-white pl-6">
 
               {/* College */}
               <div className="relative">
-                <span className="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-purple-400" />
+                <span className="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-white" />
 
-                <p className="text-xs tracking-wider text-purple-300">
+                <p className="text-xs tracking-wider text-white">
                   2022 – 2026
                 </p>
 

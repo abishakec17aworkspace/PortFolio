@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Form + Details */}
-        <div className=" w-full h-fit p-4 gap-4 flex flex-row-reverse justify-center align-middle items-center mb-10">
+        <div className=" w-full h-fit p-4 gap-4 flex lg:flex-row-reverse md:flex-col sm:flex-col  justify-center align-middle items-center mb-10">
 
           {/* LEFT : Contact Form */}
           <div>
@@ -135,7 +135,7 @@ const Footer = () => {
 
               <button
                 type="submit"
-                className="self-start mt-2 px-6 py-2 rounded-full border border-white/30 bg-white/25 text-xs uppercase tracking-widest"
+                  className="text-sm text-gray-300 hover:bg-white hover:text-black hover:scale-110 p-3 rounded-lg bg-black duration-200"
               >
                 Send Message ↗
               </button>
@@ -153,7 +153,7 @@ const Footer = () => {
 
               <a
                 href="mailto:abishakec17a@gmail.com"
-                className="text-base md:text-lg font-light text-gray-200 p-3 rounded-lg bg-black"
+                className="text-base md:text-lg font-light text-gray-200 p-3 rounded-lg "
               >
                 abishakec17a@gmail.com
               </a>
@@ -165,7 +165,7 @@ const Footer = () => {
                 Location
               </p>
 
-              <p className="text-base md:text-lg font-light text-gray-200 bg-black p-3 rounded-lg">
+              <p className="text-base md:text-lg font-light text-gray-200  p-3 rounded-lg">
                 Salem, Tamilnadu, India
               </p>
             </div>
@@ -178,19 +178,19 @@ const Footer = () => {
 
               <div className="flex flex-wrap gap-6 ">
                 <a
-                  href="https://github.com/AbishakeC"
+                  href="https://github.com/abishakec17aworkspace"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-300 p-3 rounded-lg bg-black"
+                  className="text-sm text-gray-300 hover:bg-white hover:text-black hover:scale-110 p-3 rounded-lg bg-black duration-200"
                 >
                   GitHub ↗
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/abishake-c17"
+                  href="https://www.linkedin.com/in/abishake-c17a/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-300 p-3 rounded-lg bg-black"
+                  className="text-sm text-gray-300 hover:bg-white hover:text-black hover:scale-110 p-3 rounded-lg bg-black duration-200"
                 >
                   LinkedIn ↗
                 </a>
@@ -199,7 +199,7 @@ const Footer = () => {
                   href="https://instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-300 p-3 rounded-lg bg-black"
+                  className="text-sm text-gray-300 hover:bg-white hover:text-black hover:scale-110 p-3 rounded-lg bg-black duration-200"
                 >
                   Instagram ↗
                 </a>

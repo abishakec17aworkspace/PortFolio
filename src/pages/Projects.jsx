@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import GeminiVid from "../assets/Videos/GeminiVideo.mp4";
+import NexShopy from "../assets/Videos/NexShopy.mp4";
 import {
   FaGithub,
   FaExternalLinkAlt,
@@ -18,23 +20,45 @@ const projects = [
     description:
       "An AI-powered versatile data analyzer that transforms raw datasets into meaningful insights through data cleaning, statistical analysis, and interactive visualizations.",
     tech: ["React", "Python", "Pandas", "Machine Learning"],
-    github: "https://github.com/AbishakeC",
+    github: "https://github.com/abishakec17aworkspace",
     demo: "#",
     video: "/videos/analyzerx.mp4",
     number: "01",
   },
   {
-    id: 2,
-    title: "Dellfy",
-    category: "MOBILE APPLICATION",
-    description:
-      "A secure personal gallery application designed to manage private media, organize photos, and share content with trusted friends.",
-    tech: ["React Native", "TypeScript", "Expo", "NativeWind"],
-    github: "https://github.com/AbishakeC",
-    demo: "#",
-    video: "/videos/dellfy.mp4",
-    number: "02",
-  },
+  id: 2,
+  title: "Chat Platform",
+  category: "AI-POWERED WEB APPLICATION",
+  description:
+    "An AI-powered chat platform that enables users to interact with Gemini AI through a secure, personalized interface. Features JWT-based authentication, individual user accounts, persistent chat history, and seamless conversation management.",
+  tech: ["React", "JavaScript", "Express.js", "MongoDB", "JWT","TailwindCSS"],
+  github: "https://github.com/abishakec17aworkspace",
+  demo: "#",
+  video: GeminiVid,
+  number: "02",
+},
+{
+  id: 4,
+  title: "NexShopy",
+  category: "FULL STACK E-COMMERCE",
+  description:
+    "A modern full-stack e-commerce platform designed to deliver a seamless online shopping experience, featuring product management, secure user authentication, shopping cart functionality, order processing, and integrated payment solutions.",
+  tech: [
+    "React",
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT",
+    "Tailwind CSS",
+    "Razorpay"
+  ],
+  github: "https://github.com/abishakec17aworkspace",
+  demo: "#",
+  video: NexShopy,
+  number: "04",
+},
+
   {
     id: 3,
     title: "Portfolio",
@@ -42,7 +66,7 @@ const projects = [
     description:
       "A personal portfolio showcasing my technical expertise, creative ideas, projects, and journey as a software developer.",
     tech: ["React", "JavaScript", "Tailwind CSS", "Vite"],
-    github: "https://github.com/AbishakeC",
+    github: "https://github.com/abishakec17aworkspace",
     demo: "#",
     video: "/videos/portfolio.mp4",
     number: "03",
@@ -54,7 +78,7 @@ const projects = [
     description:
       "A personal portfolio showcasing my technical expertise, creative ideas, projects, and journey as a software developer.",
     tech: ["React", "JavaScript", "Tailwind CSS", "Vite"],
-    github: "https://github.com/AbishakeC",
+    github: "https://github.com/abishakec17aworkspace",
     demo: "#",
     video: "/videos/portfolio.mp4",
     number: "03",
@@ -177,7 +201,7 @@ const Projects = () => {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/15" />
 
-      <div className="relative z-10 w-full">
+      <div className="relative z-10 w-full ">
 
         {/* Section Heading */}
         <div className="mb-9 flex flex-col justify-between gap-5 md:flex-row md:items-end">
@@ -222,12 +246,12 @@ const Projects = () => {
         {/* Projects Carousel */}
         <div
           ref={carouselRef}
-          className="project-carousel flex w-full snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-4"
+          className="project-carousel flex w-full snap-x cursor-pointer snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-4"
         >
           {projects.map((project) => (
             <div
               key={project.id}
-              className="project-slide group relative flex w-full shrink-0 snap-start flex-col overflow-hidden rounded-xl border border-white/10 bg-black/80 p-3 shadow-xl shadow-black/30 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-violet-500/50 hover:bg-black sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-13.333px)]"
+              className="project-slide  group relative flex w-full shrink-0 snap-start flex-col overflow-hidden rounded-xl border border-white/10 bg-black/70 p-3 shadow-xl shadow-black/30 backdrop-blur-xl transition-all duration-500 hover:scale-105 cursor-pointer hover:border-violet-500/50 hover:bg-black sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-13.333px)]"
             >
 
               {/* Video Preview */}
@@ -251,7 +275,7 @@ const Projects = () => {
                 </div>
 
                 {/* Preview Label */}
-                <span className="absolute bottom-2 left-2 rounded-full border border-white/20 bg-black/70 px-2.5 py-1 text-[9px] uppercase tracking-widest text-white backdrop-blur-md">
+                <span className="absolute bottom-2 left-2 rounded-full border border-white/20 bg-black/70 scale-75 px-2.5 py-1 text-[9px] uppercase tracking-widest text-white backdrop-blur-md">
                   Watch Preview
                 </span>
 
@@ -284,7 +308,7 @@ const Projects = () => {
                 {project.tech.map((technology) => (
                   <span
                     key={technology}
-                    className="rounded-full border border-white/10 bg-white/[0.03] px-2 py-1 text-[9px] text-gray-300 transition-colors duration-300 group-hover:border-violet-400/30"
+                    className="rounded-xl border border-white/10 bg-white/[0.03] px-2 cursor-pointer text-[9px] text-gray-300 transition-colors duration-300 group-hover:border-violet-400/30"
                   >
                     {technology}
                   </span>
