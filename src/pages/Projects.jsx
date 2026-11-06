@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import GeminiVid from "../assets/Videos/GeminiVideo.mp4";
 import NexShopy from "../assets/Videos/NexShopy.mp4";
+import oldport from "../assets/Videos/OldPortfolio.mp4"
 import {
   FaGithub,
   FaExternalLinkAlt,
@@ -56,7 +57,7 @@ const projects = [
   github: "https://github.com/abishakec17aworkspace",
   demo: "#",
   video: NexShopy,
-  number: "04",
+  number: "03",
 },
 
   {
@@ -68,20 +69,8 @@ const projects = [
     tech: ["React", "JavaScript", "Tailwind CSS", "Vite"],
     github: "https://github.com/abishakec17aworkspace",
     demo: "#",
-    video: "/videos/portfolio.mp4",
-    number: "03",
-  },
-  {
-    id: 4,
-    title: "Portfolio",
-    category: "WEB DEVELOPMENT",
-    description:
-      "A personal portfolio showcasing my technical expertise, creative ideas, projects, and journey as a software developer.",
-    tech: ["React", "JavaScript", "Tailwind CSS", "Vite"],
-    github: "https://github.com/abishakec17aworkspace",
-    demo: "#",
-    video: "/videos/portfolio.mp4",
-    number: "03",
+    video: oldport,
+    number: "04",
   },
 ];
 
