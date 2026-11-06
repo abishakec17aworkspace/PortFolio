@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import Navbar from './assets/components/Navbar'
 import Mainpage from './pages/Mainpage'
 import About from './pages/About'
 import Projects from './pages/Projects'

@@ -26,7 +26,7 @@ const Mainpage = () => {
       {/* Foreground Header */}
       <div className="relative z-10 flex flex-row items-center justify-between px-8 py-6  ">
 
-        <h1 className="rounded-lg  p-2 text-xl font-light text-white ">
+        <h1 className="rounded-lg  p-2 text-xl font-light text-white/25 ">
           this is Abishake C
         </h1>
 
