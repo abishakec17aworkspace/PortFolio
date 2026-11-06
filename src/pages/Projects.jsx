@@ -182,6 +182,7 @@ const Projects = () => {
         loop
         muted
         playsInline
+        preload="none"
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source src="/videos/Background3.mp4" type="video/mp4" />
