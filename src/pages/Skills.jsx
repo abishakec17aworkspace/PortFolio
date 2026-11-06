@@ -1,6 +1,6 @@
 
 import React from "react";
-import SkillComponent from "../assets/components/SkillComponent";
+import SkillComponent from "../components/SkillComponent";
 import VioletRoom from "../assets/WhiteAbstract.jpg";
 
 const Skills = () => {
