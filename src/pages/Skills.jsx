@@ -1,7 +1,7 @@
 
 import React from "react";
 import SkillComponent from "../components/SkillComponent";
-import VioletRoom from "../assets/Specs.png";
+import VioletRoom from "../assets/WhiteAbstract.jpg";
 
 const Skills = () => {
   const coreConcepts = [
@@ -39,7 +39,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="relative min-h-screen w-full bg-[url('../assets/OrangeRoom.jpg')] h-fit bg-cover overflow-hidden  px-6 py-10 text-white md:px-12"
+      className="relative min-h-screen w-full  h-fit bg-cover overflow-hidden   px-6 py-10 text-white md:px-12"
       style={{ backgroundImage: `url(${VioletRoom})` }}
     >
       
@@ -47,7 +47,7 @@ const Skills = () => {
       {/* <div className="absolute inset-0 bg-[url('../assets/OrangeRoom.jpg')] h-fit  bg-cover bg-center " /> */}
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/80  " />
 
       {/* Main Content */}
       <div className="relative z-10 ">

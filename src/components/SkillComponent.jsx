@@ -4,7 +4,7 @@ import React from "react";
 const SkillComponent = ({ title, skills }) => {
   return (
     <div className="mb-8 scale-90">
-      <h1 className="p-3 text-2xl font-semibold text-violet-700">
+      <h1 className="p-3 text-2xl font-semibold text-white">
         {title} :
       </h1>
 
@@ -12,7 +12,8 @@ const SkillComponent = ({ title, skills }) => {
         {skills.map((skill, index) => (
           <span
             key={index}
-            className="cursor-pointer text-lg font-semibold text-white  hover:scale-125 hover:bg-white hover:text-black hover:shadow-xl hover:shadow-white/30 hover:px-4 p-4 rounded-xl duration-150 delay-75"
+            className="cursor-pointer text-lg font-semibold text-white/70
+            hover:scale-125 hover:bg-white hover:text-black hover:shadow-xl hover:shadow-white/30 hover:px-4 p-4 rounded-xl duration-150 delay-75"
           >
             {skill}
           </span>

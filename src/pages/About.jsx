@@ -18,7 +18,7 @@ const About = () => {
       </video>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/5" />
+      <div className="absolute inset-0 bg-black/70" />
 
       {/* Section Heading */}
       <div className="relative z-10 mb-16">

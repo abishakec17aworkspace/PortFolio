@@ -1,14 +1,43 @@
-
 import React from "react";
-import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
+import {
+  BsFillArrowUpRightCircleFill,
+} from "react-icons/bs";
+
+import {
+  FaCode,
+  FaLaptopCode,
+  FaDatabase,
+  FaRobot,
+} from "react-icons/fa";
+
 import VioletRoom from "../assets/Portal.png";
 
 const FreeLancing = () => {
   const services = [
-    "Build your personal websites",
-    "Turn your thoughts into applications",
-    "Get valuable insights from your data",
-    "Increase your business productivity with a proper showcase",
+    {
+      icon: <FaLaptopCode />,
+      title: "Web Development",
+      description:
+        "Building responsive, modern websites tailored to your personal brand or business."
+    },
+    {
+      icon: <FaCode />,
+      title: "Full-Stack Applications",
+      description:
+        "Transforming ideas into scalable applications with seamless frontend and backend experiences."
+    },
+    {
+      icon: <FaDatabase />,
+      title: "Data Analytics",
+      description:
+        "Turning complex datasets into meaningful insights through intelligent analysis and visualization."
+    },
+    {
+      icon: <FaRobot />,
+      title: "AI-Powered Solutions",
+      description:
+        "Integrating intelligent AI features to automate workflows and enhance digital experiences."
+    },
   ];
 
   return (
@@ -17,11 +46,12 @@ const FreeLancing = () => {
       className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat px-6 py-16 md:px-12 lg:px-20 text-white"
       style={{ backgroundImage: `url(${VioletRoom})` }}
     >
+
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black/30" />
 
       {/* Main Container */}
-      <div className="relative z-10 max-w-7xl mx-auto min-h-[85vh] flex flex-col justify-around ">
+      <div className="relative z-10 max-w-7xl mx-auto min-h-[85vh] flex flex-col justify-around">
 
         {/* Heading */}
         <div className="mb-5 md:mb-20">
@@ -30,13 +60,15 @@ const FreeLancing = () => {
           </p>
 
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-light leading-tight">
-            Freelancing <br className="hidden sm:block" />
-            {/* <span className="text-orange-400">Aspects</span> */}
+            Make your Ideas Into
+            <br />
+            Digital Experiences.
           </h1>
 
-          <p className="mt-6 text-gray-300 text-base md:text-xl max-w-xl leading-relaxed">
-            Transforming your ideas into meaningful digital experiences
-            through technology, creativity, and innovation.
+          <p className="mt-6 text-gray-300 text-base md:text-lg max-w-2xl leading-relaxed">
+            Helping individuals and businesses build impactful digital
+            products through thoughtful design, modern technologies,
+            and creative engineering.
           </p>
         </div>
 
@@ -46,16 +78,20 @@ const FreeLancing = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="min-h-fit flex items-center p-3 md:p-8 rounded-xl shadow-xl shadow-black/30  backdrop-blur-lg  hover:scale-125 duration-200 "
+              className="min-h-fit flex items-center p-3 md:p-8 rounded-xl shadow-xl shadow-black/30 backdrop-blur-lg hover:scale-105 duration-200"
             >
               <div>
-                {/* <span className="block text-sm text-orange-300/70 tracking-[0.3em] mb-5">
-                  0{index + 1}
-                </span> */}
+                <div className="text-orange-300 text-2xl mb-5">
+                  {service.icon}
+                </div>
 
-                <h3 className="text-lg md:text-xl font-light leading-relaxed text-white">
-                  {service}
+                <h3 className="text-lg md:text-xl font-light leading-relaxed text-white mb-3">
+                  {service.title}
                 </h3>
+
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  {service.description}
+                </p>
               </div>
             </div>
           ))}
@@ -70,13 +106,15 @@ const FreeLancing = () => {
             {/* Contact Text */}
             <div className="max-w-3xl">
               <p className="uppercase text-sm tracking-[0.4em] text-orange-300/70 mb-6">
-                Have a project work idea?
+                Have Something In Mind?
               </p>
 
               <h2 className="text-3xl sm:text-4xl md:text-6xl font-light leading-tight">
-                Let's get to work
+                Let's Build Something
                 <br />
-                <span className="text-orange-400">together.</span>
+                <span className="text-orange-400">
+                  Extraordinary.
+                </span>
               </h2>
             </div>
 
@@ -84,10 +122,10 @@ const FreeLancing = () => {
             <a
               href="#contact"
               aria-label="Let's work together"
-              className="flex items-center gap-4 text-orange-300 pb-2"
+              className="flex items-center gap-4 text-orange-300 pb-2 hover:text-orange-400 transition-colors"
             >
               <span className="text-sm md:text-base uppercase tracking-[0.2em]">
-                Just Contact
+                Let's Connect
               </span>
 
               <BsFillArrowUpRightCircleFill

@@ -6,6 +6,7 @@ const Footer = () => {
     name: "",
     email: "",
     message: "",
+    contact:""
   });
 
   const handleChange = (e) => {
@@ -26,7 +27,9 @@ const Footer = () => {
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
 
-    window.location.href = `mailto:your-email@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:abishakec17a@gmail.com?subject=${subject}&body=${body}`;
+
+    alert("mail updated sucessfully")
   };
 
   return (
@@ -59,7 +62,7 @@ const Footer = () => {
 
 
       {/* Background Overlay */}
-      <div className="absolute inset-0 h-full bg-gradient-to-b from-black/20 via-[#08090d]/80 to-[#08090d]" />
+      <div className="absolute inset-0 h-full bg-gradient-to-b from-black/5 via-[#08090d]/70 to-[#08090d]" />
 
       {/* Main Content */}
       <div className="relative z-10 max-w-7xl w-full mx-auto px-6 pt-10 md:px-12 md:pt-14">
@@ -105,6 +108,16 @@ const Footer = () => {
                 name="email"
                 placeholder="Your Email Address"
                 value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full bg-transparent border-b border-white/20 py-3 text-sm text-white placeholder-white outline-none focus:border-orange-400"
+              />
+
+              <input
+                type="number"
+                name="contact"
+                placeholder="Your Contact Number"
+                value={formData.contact}
                 onChange={handleChange}
                 required
                 className="w-full bg-transparent border-b border-white/20 py-3 text-sm text-white placeholder-white outline-none focus:border-orange-400"
